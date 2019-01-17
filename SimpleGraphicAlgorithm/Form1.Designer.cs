@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.b = new System.Windows.Forms.TextBox();
+            this.g = new System.Windows.Forms.TextBox();
+            this.r = new System.Windows.Forms.TextBox();
+            this.y1 = new System.Windows.Forms.TextBox();
+            this.x1 = new System.Windows.Forms.TextBox();
+            this.x2 = new System.Windows.Forms.TextBox();
+            this.y2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,57 +47,59 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.a = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox4
+            // b
             // 
-            this.textBox4.Location = new System.Drawing.Point(608, 37);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(39, 20);
-            this.textBox4.TabIndex = 9;
+            this.b.Location = new System.Drawing.Point(608, 37);
+            this.b.Name = "b";
+            this.b.Size = new System.Drawing.Size(39, 20);
+            this.b.TabIndex = 9;
             // 
-            // textBox1
+            // g
             // 
-            this.textBox1.Location = new System.Drawing.Point(562, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(39, 20);
-            this.textBox1.TabIndex = 10;
+            this.g.Location = new System.Drawing.Point(562, 37);
+            this.g.Name = "g";
+            this.g.Size = new System.Drawing.Size(39, 20);
+            this.g.TabIndex = 10;
             // 
-            // textBox2
+            // r
             // 
-            this.textBox2.Location = new System.Drawing.Point(517, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(39, 20);
-            this.textBox2.TabIndex = 11;
+            this.r.Location = new System.Drawing.Point(517, 37);
+            this.r.Name = "r";
+            this.r.Size = new System.Drawing.Size(39, 20);
+            this.r.TabIndex = 11;
             // 
-            // textBox3
+            // y1
             // 
-            this.textBox3.Location = new System.Drawing.Point(652, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(39, 20);
-            this.textBox3.TabIndex = 12;
+            this.y1.Location = new System.Drawing.Point(652, 79);
+            this.y1.Name = "y1";
+            this.y1.Size = new System.Drawing.Size(39, 20);
+            this.y1.TabIndex = 12;
             // 
-            // textBox5
+            // x1
             // 
-            this.textBox5.Location = new System.Drawing.Point(607, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(39, 20);
-            this.textBox5.TabIndex = 13;
+            this.x1.Location = new System.Drawing.Point(607, 79);
+            this.x1.Name = "x1";
+            this.x1.Size = new System.Drawing.Size(39, 20);
+            this.x1.TabIndex = 13;
             // 
-            // textBox6
+            // x2
             // 
-            this.textBox6.Location = new System.Drawing.Point(607, 105);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(39, 20);
-            this.textBox6.TabIndex = 14;
+            this.x2.Location = new System.Drawing.Point(607, 105);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(39, 20);
+            this.x2.TabIndex = 14;
             // 
-            // textBox7
+            // y2
             // 
-            this.textBox7.Location = new System.Drawing.Point(652, 105);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(39, 20);
-            this.textBox7.TabIndex = 15;
+            this.y2.Location = new System.Drawing.Point(652, 105);
+            this.y2.Name = "y2";
+            this.y2.Size = new System.Drawing.Size(39, 20);
+            this.y2.TabIndex = 15;
             // 
             // label1
             // 
@@ -116,6 +118,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Draw a line";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -204,11 +207,29 @@
             this.button2.Text = "Draw random lines";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // a
+            // 
+            this.a.Location = new System.Drawing.Point(652, 37);
+            this.a.Name = "a";
+            this.a.Size = new System.Drawing.Size(39, 20);
+            this.a.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(649, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 13);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "A";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.a);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox8);
@@ -220,13 +241,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.y2);
+            this.Controls.Add(this.x2);
+            this.Controls.Add(this.x1);
+            this.Controls.Add(this.y1);
+            this.Controls.Add(this.r);
+            this.Controls.Add(this.g);
+            this.Controls.Add(this.b);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -237,13 +258,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox b;
+        private System.Windows.Forms.TextBox g;
+        private System.Windows.Forms.TextBox r;
+        private System.Windows.Forms.TextBox y1;
+        private System.Windows.Forms.TextBox x1;
+        private System.Windows.Forms.TextBox x2;
+        private System.Windows.Forms.TextBox y2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
@@ -256,6 +277,8 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox a;
+        private System.Windows.Forms.Label label9;
     }
 }
 
