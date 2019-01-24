@@ -28,11 +28,11 @@ namespace SimpleGraphicAlgorithm
             int parsed;
             foreach (TextBox tb in checkColor)
             {
-                if (!(int.TryParse(tb.Text, out parsed) && parsed < 256 && parsed > 0)) return false;
+                if (!(int.TryParse(tb.Text, out parsed) && parsed < 256 && parsed >= 0)) return false;
             }
             foreach (TextBox tb in checkPosition)
             {
-                if (!(int.TryParse(tb.Text, out parsed) && parsed < 500 && parsed > 0)) return false;
+                if (!(int.TryParse(tb.Text, out parsed) && parsed < 500 && parsed >= 0)) return false;
             }
 
             return true;
@@ -41,12 +41,23 @@ namespace SimpleGraphicAlgorithm
 
         void DrawLine(Line line) //line algorithm
         {
-            for (double t = 0.0; t < 1.0; t += 0.01)
+            float x = line.sx, y = line.sy;
+            int dx = line.ex - line.sx;
+            int dy = line.ey - line.sy;
+            int steps = 0;
+            if (Math.Abs(dx) > Math.Abs(dy)) steps = Math.Abs(dx);
+            else steps = Math.Abs(dy);
+            float inX = (float)dx / (float)steps;
+            float inY = (float)dy / (float)steps;
+
+            for(int i=0;i < steps;i++)
             {
-                int x = (int)(line.sx * (1.0 - t) + line.ex * t);
-                int y = (int)(line.sy * (1.0 - t) + line.ey * t);
-                paint.SetPixel(x, y, line.color);
+                x = x + inX;
+                y = y + inY;
+                paint.SetPixel(Convert.ToInt32(x), Convert.ToInt32(y), line.color);
+
             }
+
             pictureBox1.Image = paint;
         }
 
